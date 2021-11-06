@@ -1,0 +1,86 @@
+.section-3 {
+	display: flex;
+	justify-content: space-between;
+	width: 90vw;
+	height: 115vh;
+	margin: auto;
+	position: relative;
+}
+
+.section-3-col-left{
+	display: flex;
+	width: 30vw;
+	align-items: center;
+	height: 60%;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url("/images/a5.png");
+	object-fit: cover;
+	background-position: center;
+}
+
+.wallpaper2 {
+	background-image: url("/images/wallpaper.png");
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 100vh;
+	background-size: cover;
+}
+
+.lounge {
+	background-image: url("/images/sofa.png");
+	position: absolute;
+	left: 58%;
+	top: 16%;
+	width: 40vw;
+	height: 70vh;
+	background-repeat: no-repeat;
+	background-size: contain;
+	filter: drop-shadow(2px 1px 25px #2a2929);
+}
+
+.section-3-header {
+	text-align: center;
+	font-size: 5vw;
+	font-weight: 300;
+	align-items: center;
+}
+
+.button-wrapper-section-3 {
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+}
+
+.btn-more {
+	align-self: flex-end;
+	justify-content: center;
+	transition: .5s;
+}
+
+@media screen and (max-width: 800px) {
+	
+	.section-3 {
+		height: 60vh;
+		flex-direction: row-reverse;
+	}
+
+	.section-3-col-left {
+		height: 50vh;
+	}
+
+	.section-3-col-right {
+		height: 50vh;
+	}
+	.wallpaper2 {
+		height: 50vh;
+		width: 60vw;
+	}
+
+	.lounge {
+		left: 5%;
+		top: 15%;
+		width: 60vw;
+		height: 60vh;
+	}
+}

@@ -1,0 +1,108 @@
+.section-2 {
+	display: flex;
+	justify-content: space-between;
+	width: 90vw;
+	height: 115vh;
+	position: relative;
+	margin: auto;
+}
+
+.section-2-col-left {
+	max-width: 50vw;
+}
+
+.wallpaper {
+	background-image: url("/images/wallpaper.png");
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 100vh;
+	background-size: cover;
+}
+
+.kitchen {
+	background-image: url("/images/kitchen.png");
+	position: absolute;
+	left: 2%;
+	top: 12%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 45%;
+	height: 45%;
+	transform: rotate(-.70deg);
+	filter: brightness(80%);
+}
+
+
+.section-2-col-right {
+	display: flex;
+	width: 30vw;
+	align-items: center;
+	height: 60%;
+	flex-direction: column;
+	justify-content: center;
+	/* background-image: url("/images/a2.png"); */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.section-2-header {
+	text-align: center;
+	font-size: 5vw;
+	font-weight: 300;
+	align-items: center;
+}
+
+.button-wrapper-section-2 {
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+}
+
+.btn-more {
+	align-self: flex-end;
+	justify-content: center;
+	transition: .5s;
+	border: 1px solid transparent;
+}
+
+.btn-more:hover {
+	background-color: transparent;
+	border: 1px solid var(--mobile-bg-color);
+}
+
+@media screen and (max-width: 800px) {
+
+	.section-2 {
+		margin-top: 10vh;
+		height: 60vh;
+	}
+
+	.section-2-col-left {
+		max-height: 20vw;
+	}
+
+	.wallpaper {
+		height: 50vh;
+		width: 60vw;
+	}
+
+	.kitchen {
+		left: 5%;
+		top: 20%;
+		width: 200px;
+		height: 30vh;
+	}
+
+	.section-2-col-right {
+		height: 50vh;
+		flex-direction: column;
+		justify-content: center;
+		display: flex;
+	}
+
+	.btn {
+		padding: 10px 20px;
+	}
+
+}

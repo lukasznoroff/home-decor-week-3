@@ -1,0 +1,163 @@
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90vw;
+	height: 10vh;
+	margin: auto;
+}
+
+.logo {
+	width: 12vw;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	padding: 10px;
+}
+
+.current-page {
+	color: var(--btn-color);
+}
+
+ul {
+	position: relative;
+}
+
+li {
+	list-style-type: none;
+	font-size: clamp(.9rem, 1vw, 1.25rem);
+}
+
+li > a:hover {
+	color: var(--btn-color);
+}
+
+.cart:hover path {
+	fill: var(--btn-color);
+	stroke: var(--btn-color);
+
+}
+
+.login:hover path {
+	fill: var(--btn-color);
+	stroke: var(--btn-color);
+}
+
+.login:hover #Ellipse_3 {
+	fill: var(--btn-color);
+	stroke: var(--btn-color);
+}
+
+.submenu {
+	position: absolute;
+	opacity: 0;
+	transition: opacity .4s;
+	pointer-events: none;
+}
+
+.shop-link:hover {
+	cursor: pointer;
+	color: var(--btn-color);
+}
+
+
+.shop-link:hover .submenu {
+	opacity: 1;
+	pointer-events: all;
+}
+
+@media screen and (max-width: 800px) {
+
+	.line {
+		display: block;
+		margin: 3px 0;
+		padding: 1px 15px;
+		z-index: 999;
+		background-color: var(--btn-color);
+		transition: all .3s ease;
+	}
+
+	.hamburger {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.hamburger-menu {
+		position: absolute;
+		top: 10px;
+		right: 5%;
+		width: 40px;
+		height: 50px;
+		opacity: 0;
+		cursor: pointer;
+		z-index: 999;
+		display: block;
+	}
+
+	.hamburger-menu:checked + ul {
+		transform: translate(-100%);
+	}
+
+	.mobile-menu:hover > ul {
+		transform: translate(-100%);
+	}
+
+	.hamburger-menu:checked ~ .hamburger .line:nth-child(1) {
+		transform: rotateZ(45deg) translateY(6px);
+	}
+
+	.hamburger-menu:checked ~ .hamburger .line:nth-child(2) {
+		display: none;
+	}
+
+	.hamburger-menu:checked ~ .hamburger .line:nth-child(3) {
+		transform: rotateZ(-45deg) translateY(-6px);
+	}
+
+	nav ul {
+		background-color: var(--mobile-bg-color);
+		position: fixed;
+		top: 0;
+		left: 100%;
+		height: 100vh;
+		width: 1000px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 99;
+		transition: transform 1s ease;
+	}
+
+	.menu {
+		width: 100%;
+		justify-content: center;
+	}
+
+	 li {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.shop-link {
+		height: 30px;
+		border-radius: 5px;
+		position: relative;
+	}
+
+	.submenu {
+		position: absolute;
+		top: 50px;
+		left: -30px;
+		color: #1c1c1c;
+		height: 200px;
+		width: 120px;
+		background-color: var(--mobile-bg-color);
+	}
+
+	.logo {
+		width: 150px;
+	}
+}
