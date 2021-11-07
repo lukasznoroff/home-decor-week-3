@@ -29,8 +29,8 @@
 	height: 80%;
 }
 
-.about-header {
-	margin-bottom: 5vh;
+.about-header-text {
+	background-color: var(--bg-color)
 }
 
 .about-header {
@@ -38,6 +38,7 @@
 	height: 30vh;
 	font-size: clamp(1.3rem, 1.5vw, 4rem);
 	padding: 2vw;
+	margin-bottom: 5vh;
 }
 
 .about-text {

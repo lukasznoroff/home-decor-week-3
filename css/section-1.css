@@ -28,37 +28,12 @@
 .decor-container {
 	background-image: url("/images/main-image.png");
 	background-repeat: no-repeat;
-	background-size: contain;
 	background-size: cover;
-	background-position: right;
 	background-position: 50% 90%;
 	width: 50%;
 	height: 80%;
-
 	filter: drop-shadow(2px 1px 5px #2a2929);
 	filter: brightness(90%);
-
-	z-index: 99;
-}
-
-.gradient { 
-	opacity: .2;
-	z-index: -992;
-  animation: animateBg 15s linear infinite;
-  background-image: linear-gradient(0deg,#cf5c5c,#c19b4a,#def2a0,#c6ee4a,#42eca6,#64b3d9,#208ea2,#498ada,#5b73df,#897ed3,#cf5c5c,#c19b4a);
-  background-size: 100% 1100%;
-  /* height: 100vh;
-  width: 100vw; */
-	height: 100%;
-}
-@keyframes animateBg {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 0% 100%; }
-}
-
-.decor-image {
-	width: 28vw;
-	width: 30vw;
 }
 
 @media screen and (max-width: 800px) {

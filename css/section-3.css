@@ -14,9 +14,6 @@
 	height: 60%;
 	flex-direction: column;
 	justify-content: center;
-	background-image: url("/images/a5.png");
-	object-fit: cover;
-	background-position: center;
 }
 
 .wallpaper2 {
@@ -40,10 +37,15 @@
 }
 
 .section-3-header {
-	text-align: center;
+	text-align: left;
+	width: 100%;
 	font-size: 5vw;
 	font-weight: 300;
 	align-items: center;
+	background:  -webkit-linear-gradient( #F2952F, rgba(222, 125, 10, 0.62));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .button-wrapper-section-3 {
@@ -63,6 +65,10 @@
 	.section-3 {
 		height: 60vh;
 		flex-direction: row-reverse;
+	}
+
+	.section-3-header {
+		padding-left: 8%;
 	}
 
 	.section-3-col-left {

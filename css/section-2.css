@@ -40,17 +40,18 @@
 	height: 60%;
 	flex-direction: column;
 	justify-content: center;
-	/* background-image: url("/images/a2.png"); */
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .section-2-header {
-	text-align: center;
+	text-align: left;
+	width: 100%;
 	font-size: 5vw;
 	font-weight: 300;
 	align-items: center;
+	background:  -webkit-linear-gradient( #F2952F, rgba(222, 125, 10, 0.62));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .button-wrapper-section-2 {
@@ -76,6 +77,10 @@
 	.section-2 {
 		margin-top: 10vh;
 		height: 60vh;
+	}
+
+	.section-2-header {
+		padding-left: 8%;
 	}
 
 	.section-2-col-left {
@@ -104,5 +109,4 @@
 	.btn {
 		padding: 10px 20px;
 	}
-
 }

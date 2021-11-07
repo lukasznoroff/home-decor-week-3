@@ -32,6 +32,16 @@
 
 .product-info > li {
 	font-size: clamp(.9rem, 1vw, 1.25rem);
+	line-height: 1.8;
+}
+
+.product-title {
+	font-weight: 300;
+	color: rgb(230, 230, 230);
+}
+
+.in-stock {
+	margin-top: 10px;
 }
 
 .product-price {
@@ -40,14 +50,16 @@
 }
 
 .btn-buy {
-	border: 2px solid #888;
+	border: 2px solid var(--btn-color);
 	padding: 5px 20px;
 	font-style: normal;
 	transition: .5s all;
+	letter-spacing: .14vw;
 }
 
 .btn-buy:hover {
-	border-color: var(--font-color);
+	border-color: #888;
+	color: var(--btn-color);
 }
 
 .col-image {
